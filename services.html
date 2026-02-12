@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rituals & Services | MIA BEAUTY</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-gold: #B89655;
+            --deep-emerald: #012119;
+            --soft-cream: #FDFBF7;
+            --text-dark: #1a1a1a;
+            --white: #ffffff;
+            --warm-sand: #E8D5B7;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.7;
+            color: var(--text-dark);
+            background-color: var(--soft-cream);
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* --- Header --- */
+        header {
+            background: var(--white);
+            padding: 1.2rem 0;
+            text-align: center;
+            border-bottom: 3px solid var(--warm-sand);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .main-logo { width: 110px; height: auto; }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+
+        /* --- Hero --- */
+        .services-hero {
+            background: var(--deep-emerald);
+            color: var(--white);
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .services-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            margin: 0;
+            letter-spacing: 3px;
+        }
+
+        /* --- Responsive Layout --- */
+        .layout-wrapper {
+            display: grid;
+            grid-template-columns: 1fr; /* Stacked for mobile */
+            max-width: 1200px;
+            margin: 30px auto;
+            gap: 40px;
+            padding: 0 15px;
+        }
+
+        /* Desktop Adjustment */
+        @media (min-width: 992px) {
+            .layout-wrapper {
+                grid-template-columns: 2.2fr 1fr;
+                margin: 60px auto;
+                padding: 0 40px;
+            }
+            .services-hero { padding: 80px 20px; }
+            .services-hero h1 { font-size: 3.5rem; }
+        }
+
+        /* Service Cards */
+        .service-card {
+            background: var(--white);
+            margin-bottom: 30px;
+            border-bottom: 5px solid var(--warm-sand);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 250px; /* Shorter for mobile */
+            object-fit: cover;
+        }
+
+        @media (min-width: 768px) {
+            .service-card img { height: 450px; }
+        }
+
+        .service-content { padding: 30px 20px; }
+
+        .service-content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--deep-emerald);
+            margin-top: 0;
+        }
+
+        .ritual-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            border-top: 1px solid #f0f0f0;
+            padding-top: 20px;
+        }
+
+        .ritual-list li {
+            padding: 10px 0;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .ritual-list li::before {
+            content: "✦";
+            color: var(--primary-gold);
+            margin-right: 12px;
+            font-size: 0.8rem;
+        }
+
+        /* Sidebar Styling */
+        .sidebar {
+            background: var(--deep-emerald); /* Darker for mobile distinction */
+            color: var(--white);
+            padding: 40px 25px;
+            border-radius: 2px;
+            height: fit-content;
+        }
+
+        @media (min-width: 992px) {
+            .sidebar {
+                background: var(--white);
+                color: var(--text-dark);
+                border-top: 5px solid var(--primary-gold);
+                padding: 40px;
+            }
+        }
+
+        .sidebar h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            margin-top: 0;
+            color: var(--primary-gold);
+        }
+
+        .sidebar-item { margin-bottom: 30px; }
+
+        .sidebar-item h4 {
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            color: var(--primary-gold);
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        footer {
+            background: #000;
+            color: var(--primary-gold);
+            text-align: center;
+            padding: 60px 20px;
+        }
+    </style>
+</head>
+<body id="top">
+
+    <header>
+        <img src="Images/Mia1.png" alt="MIA BEAUTY" class="main-logo">
+        <nav>
+            <ul> 
+                <li><a href="index.html">home</a></li>
+                <li><a href="services.html">services</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul> 
+        </nav>
+    </header>
+
+    <section class="services-hero">
+        <h1>Professional Rituals</h1>
+        <p style="font-style: italic; opacity: 0.8; margin-top: 10px; font-size: 0.9rem;">Advanced Aesthetics Meet Botanical Luxury</p>
+    </section>
+
+    <div class="layout-wrapper">
+        <main>
+            <article class="service-card">
+                <img src="Images/facial.png" alt="Facial Treatments">
+                <div class="service-content">
+                    <h2>Advanced Facial Rituals</h2>
+                    <p>Utilizing high-impact electrical modalities to reach the deep layers of the dermis for biological transformation.</p>
+                    
+                    <ul class="ritual-list">
+                        <li><strong>Dermal Hydration:</strong> Lasting suppleness through barrier repair.</li>
+                        <li><strong>Pure Cleansing:</strong> Botanical purification for clear skin.</li>
+                        <li><strong>Nutrient Infusion:</strong> Delivery of high-potency peptides.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="service-card">
+                <img src="Images/eye.png" alt="Eye Treatments">
+                <div class="service-content">
+                    <h2>Luminous Eye Therapy</h2>
+                    <p>Focused rituals for the delicate orbital area using gentle micro-currents and cooling technology.</p>
+                    
+                    
+
+                    <ul class="ritual-list">
+                        <li><strong>Soothing Gels:</strong> Instant thermal cooling for stress.</li>
+                        <li><strong>Orbital Firming:</strong> Targeted micro-current lifting.</li>
+                        <li><strong>Brightening Complex:</strong> Neutralizes dark pigmentation.</li>
+                    </ul>
+                </div>
+            </article>
+        </main>
+
+        <aside class="sidebar">
+            <h3>The MIA Difference</h3>
+            
+            <div class="sidebar-item">
+                <h4>Innovation</h4>
+                <p style="font-size: 0.9rem;">The latest non-invasive electrical beauty machines for high-impact results.</p>
+            </div>
+
+            <div class="sidebar-item">
+                <h4>Bespoke Care</h4>
+                <p style="font-size: 0.9rem;">Every ritual begins with a deep clinical consultation of your skin's health.</p>
+            </div>
+
+            <div class="sidebar-item" style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 25px;">
+                <h4 style="color: var(--white);">Book a Ritual</h4>
+                <p style="font-size: 0.9rem; margin-bottom: 20px;">Consultations are by appointment only.</p>
+                <a href="mailto:MA4215@LIVE.MDX.AC.UK" style="background: var(--primary-gold); color: white; text-decoration: none; font-weight: 600; padding: 12px 20px; display: inline-block; font-size: 0.8rem; letter-spacing: 1px;">CONTACT CONCIERGE</a>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p style="letter-spacing: 3px; font-size: 0.7rem; margin-bottom: 15px;">© 2026 MIA BEAUTY RITUALS. ALL RIGHTS RESERVED.</p>
+        <a href="#top" style="text-decoration:none; color: var(--primary-gold); font-size: 0.6rem; text-transform: uppercase;">↑ RETURN TO TOP</a>
+    </footer>
+
+</body>
+</html>

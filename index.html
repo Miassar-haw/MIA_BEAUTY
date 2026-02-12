@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIA BEAUTY | The Art of Ritual</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-gold: #B89655; 
+            --deep-emerald: #012119; 
+            --warm-sand: #E8D5B7;   
+            --soft-cream: #FDFBF7;   
+            --text-main: #1A1A1A; 
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--soft-cream);
+            color: var(--text-main);
+            margin: 0;
+            line-height: 1.8;
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        header {
+            background: var(--white);
+            padding: 1.2rem 0;
+            text-align: center;
+            border-bottom: 3px solid var(--warm-sand);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .main-logo { width: 110px; height: auto; }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-main);
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: var(--deep-emerald);
+            color: var(--white);
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            letter-spacing: 8px;
+            margin: 0;
+            font-weight: 400;
+        }
+
+        /* --- Manifesto --- */
+        .manifesto {
+            background-color: var(--warm-sand);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .manifesto-box {
+            max-width: 850px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 40px 25px;
+            border: 1px solid var(--primary-gold);
+            box-shadow: 15px 15px 0px var(--deep-emerald);
+        }
+
+        .manifesto h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--deep-emerald);
+            margin: 15px 0;
+            font-weight: 700;
+        }
+
+        /* --- Product Grid --- */
+        .grid-container {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr; /* Stack on mobile */
+            gap: 40px;
+        }
+
+        .product-card {
+            background: var(--white);
+            padding-bottom: 40px;
+            text-align: center;
+        }
+
+        .img-holder {
+            background: #F4F4F4;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 280px;
+            object-fit: contain;
+        }
+
+        .product-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            color: var(--deep-emerald);
+            font-weight: 700;
+            margin: 10px 0;
+        }
+
+        /* --- Heritage Section --- */
+        .heritage-section {
+            padding: 60px 20px;
+            background: var(--white);
+            display: flex;
+            flex-direction: column; /* Stack on mobile */
+            gap: 40px;
+        }
+
+        .heritage-text h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: var(--deep-emerald);
+            font-weight: 700;
+        }
+
+        .heritage-image img { 
+            width: 100%; 
+            box-shadow: -10px 10px 0 var(--warm-sand); 
+        }
+
+        /* --- Tablet & Desktop Adjustments --- */
+        @media (min-width: 768px) {
+            .hero h1 { font-size: 4rem; letter-spacing: 12px; }
+            .manifesto { padding: 120px 20px; }
+            .manifesto-box { padding: 70px; }
+            .manifesto h2 { font-size: 2.5rem; }
+            .product-grid { grid-template-columns: repeat(2, 1fr); }
+            .heritage-section { flex-direction: row; padding: 100px 10%; gap: 80px; }
+            .heritage-text h2 { font-size: 2.8rem; }
+        }
+
+        @media (min-width: 1024px) {
+            .product-grid { grid-template-columns: repeat(4, 1fr); }
+        }
+
+        footer {
+            background: #000;
+            color: var(--primary-gold);
+            text-align: center;
+            padding: 60px 20px;
+            letter-spacing: 3px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="Images/Mia1.png" alt="MIA BEAUTY" class="main-logo">
+        <nav>
+            <ul> 
+                <li><a href="index.html">home</a></li>
+                <li><a href="services.html">services</a></li>
+                <li><a href="contact.html">contact</a></li> 
+            </ul> 
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>MIA RITUALS</h1>
+        <p style="letter-spacing: 4px; opacity: 0.9; font-weight: 500; text-transform: uppercase; font-size: 0.8rem;">The Essential Collection</p>
+    </section>
+
+    <section class="manifesto">
+        <div class="manifesto-box">
+            <span style="color: var(--primary-gold); letter-spacing: 3px; font-size: 0.8rem; font-weight: 600; text-transform: uppercase;">Our Philosophy</span>
+            <h2>The Discipline of Beauty</h2>
+            <p style="font-size: 1rem; line-height: 1.8;">MIA was born from the belief that skincare should be a deliberate, restorative act. We combine rare botanical distillates with lab-proven actives to support the skin’s biological rhythm.</p>
+        </div>
+    </section>
+
+    <div class="grid-container">
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="img-holder"><img src="Images/Toner.png" alt="Toner"></div>
+                <span style="color: var(--primary-gold); font-size: 0.7rem; letter-spacing: 2px; font-weight: 600;">01 • EQUILIBRIUM</span>
+                <h3>Balancing Toner</h3>
+                <p class="desc">Restores the skin's natural pH and soothes the dermal barrier.</p>
+            </div>
+
+            <div class="product-card">
+                <div class="img-holder"><img src="Images/lifting-cream.png" alt="Lifting Cream"></div>
+                <span style="color: var(--primary-gold); font-size: 0.7rem; letter-spacing: 2px; font-weight: 600;">02 • STRUCTURE</span>
+                <h3>Lifting Cream</h3>
+                <p class="desc">A peptide-rich concentrate engineered to support facial contours.</p>
+            </div>
+
+            <div class="product-card">
+                <div class="img-holder"><img src="Images/EX.png" alt="Exfoliant"></div>
+                <span style="color: var(--primary-gold); font-size: 0.7rem; letter-spacing: 2px; font-weight: 600;">03 • RENEWAL</span>
+                <h3>Liquid Exfoliant</h3>
+                <p class="desc">A targeted 2% BHA complex that clarifies and resurfaces.</p>
+            </div>
+
+            <div class="product-card">
+                <div class="img-holder"><img src="Images/eyelash.png" alt="Eyelash Serum"></div>
+                <span style="color: var(--primary-gold); font-size: 0.7rem; letter-spacing: 2px; font-weight: 600;">04 • ENHANCE</span>
+                <h3>Eyelash Serum</h3>
+                <p class="desc">Nutrient-dense elixir to strengthen lashes from the root.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="heritage-section">
+        <div class="heritage-text">
+            <span style="color: var(--primary-gold); letter-spacing: 3px; font-size: 0.8rem; font-weight: 600; text-transform: uppercase;">The Science</span>
+            <h2>The 5.5 pH Protocol</h2>
+            <p>Healthy skin is naturally acidic. Our research focuses on maintaining the acid mantle—the skin's primary defense system. Every MIA formula is calibrated to protect this shield.</p>
+            
+            <p style="margin-top: 20px; font-weight: 700; color: var(--deep-emerald); cursor: pointer; text-decoration: underline;">VIEW CLINICAL STUDY →</p>
+        </div>
+        <div class="heritage-image">
+            <img src="Images/skin2.png" alt="Dermal Science">
+        </div>
+    </section>
+
+    <div style="padding: 60px 20px; text-align: center; background: var(--warm-sand);">
+        <h3 style="font-family: 'Playfair Display'; font-size: 1.6rem; font-weight: 700; font-style: italic; color: var(--deep-emerald);">"Excellence in every ritual."</h3>
+        <p style="letter-spacing: 4px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; margin-top: 15px;">London • Paris • Milan</p>
+    </div>
+
+    <footer>
+        <p>© 2026 MIA BEAUTY INTERNATIONAL</p>
+    </footer>
+
+</body>
+</html>
