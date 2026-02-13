@@ -1,24 +1,28 @@
-# MIA BEAUTY | Luxury Skincare Rituals
+# E-Commerce Website (HTML & CSS)
+
+MIA BEAUTY – Skincare Website
 
 ## Project Overview
-
-This project is a static e-commerce website created using HTML and CSS for MIA BEAUTY. It demonstrates a high-end "Modern Editorial" aesthetic with a focus on clean page structure, intuitive navigation, and responsive design. The site is fully W3C validated with zero errors and contains no JavaScript.
+This project is a static e-commerce website created using HTML5 and CSS3.
+The aim of the project was to practise page structure, navigation, layout,
+and responsive design.
+No JavaScript was used in this project.
 
 ## Website Pages
-**Home page:** Introduction to the brand and the Essential Collection.
-**Services page:** Detailed catalog of Advanced Facial and Eye Rituals.
- **Contact page:** Boutique location, Google Maps integration, and Inquiry Form.
+- Home page
+- Services page
+- Contact page
 
 ## Technologies Used
-HTML5 (Semantic Structure)
-CSS3 (Responsive Design & Grid)
-GitHub Pages (Deployment)
+- HTML5
+- CSS3
+- GitHub Pages
 
-## live Website
-https://Miassar-haw.github.io/project-Miassar/
+## Live Website
+https://miassar-haw.github.io/MIA_BEAUTY/
 
 ## Screenshots
 ![Homepage](Images/homepage.png)
 
 ## Author
-Miassar – CST0400 – 2025/26 
+Miassar Alhawamdeh– CST0400 – 2025/26
